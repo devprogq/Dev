@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1 class="text">
+            Get Started with Humawork
+        </h1>
+
+        <h2>
+            Manage people easily starting from now!
+        </h2>
+
+        <label class="text" for="fname">Name</label><br>
+        <input class="inputB" type="text" id="fname" name="fname"><br><br>
+
+        <label class="text" for="email">Email Address</label><br>
+        <input class="inputB" type="email" id="email" name="email"><br><br>
+
+        <label class="text" for="psswrd">Password</label><br>
+        <input class="inputB" type="password" id="psswrd" name="psswrd"><br>
+        <br>
+        <button id="btnB"> Create Account </button>
+
+        <div id="separator" >
+                <p class="text">Or register with</p>
+        </div>
+
+        <div> 
+            <button class="btns">Google</button>
+            <button class="btns">Facebook</button>
+        </div>
+
+        <p class="text">Already have an account? <strong> <a href="">Login Here</a> </strong></p>
+
+    </form>
+</body>
+</html>
+
+<style>
+    form {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .text {
+        color: white;
+    }
+    h2 {
+        font-size: 16px;
+        color: gray;
+        opacity: 0.7;
+    }
+    .inputB {
+        width: 500px;
+        height: 45px;
+        border: 1px solid black;
+        border-radius: 10px;
+        opacity: 0.2;
+    }
+    .inputB:focus {
+        border: 1px solid black;
+        opacity: 0.5;
+    }
+    #btnB {
+        font-size: 1rem;
+        width: 500px;
+        height: 60px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .btns {
+        font-size: 1rem;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-right: 10px;
+        width: 246px;
+        height: 60px;
+    }
+    #separator {
+        margin-left: 12rem;
+        margin-top: 1rem;
+    }
+    a {
+        font-size: 1.12rem;
+        color: gray;
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    }
+    a:hover {
+        border-bottom: 1px solid;
+    }
+</style>
