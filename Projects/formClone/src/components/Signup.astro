@@ -6,14 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+<div id="wrapper">
     <form>
-        <h1 class="text">
-            Get Started with Humawork
-        </h1>
+        <div id="topText">
+            <h1 class="text">
+                Get Started with Humawork
+            </h1>
 
-        <h2>
-            Manage people easily starting from now!
-        </h2>
+            <h2>
+                Manage people easily starting from now!
+            </h2>
+        </div>
 
         <label class="text" for="fname">Name</label><br>
         <input class="inputB" type="text" id="fname" name="fname"><br><br>
@@ -38,14 +41,18 @@
         <p class="text">Already have an account? <strong> <a href="">Login Here</a> </strong></p>
 
     </form>
+</div >
+
 </body>
 </html>
 
 <style>
-    form {
-        width: 800px;
-        margin-right: auto;
-        margin-left: auto;
+    #wrapper {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;       
     }
     .text {
         color: white;
@@ -67,6 +74,7 @@
         opacity: 0.5;
     }
     #btnB {
+        cursor: pointer;
         font-size: 1rem;
         width: 500px;
         height: 60px;
@@ -78,13 +86,15 @@
         cursor: pointer;
         border: 1px solid black;
         border-radius: 10px;
-        margin-right: 10px;
+        margin-right: auto;
+        margin-left: auto;
         width: 246px;
         height: 60px;
     }
     #separator {
-        margin-left: 12rem;
-        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
     }
     a {
         font-size: 1.12rem;
