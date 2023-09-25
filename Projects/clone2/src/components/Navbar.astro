@@ -1,0 +1,52 @@
+---
+type Props = {
+
+}
+
+const {} = Astro.props
+
+---
+
+<div>
+
+  <ul class="navbar">
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+  </ul>
+
+</div>
+
+<style is:global>
+    :root {
+	--text: #e7f1fd;
+	--background: #01050a;
+	--primary: #f6c07e;
+	--secondary: #0c1802;
+	--accent: #d77d0f;
+	}
+  .navbar {
+    color: var(--text);
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.1rem solid gray;
+    gap: 3rem;
+  }
+  li {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid ;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 5rem;
+    height: 0.7rem;
+    cursor: pointer;
+  }
+</style>
