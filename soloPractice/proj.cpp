@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 // this is my first code in c++
 
@@ -135,6 +136,48 @@ int main(){
 
     std::cout << students << '\n';
     std::cout << remainder << '\n';
+
+    return 0;
+}
+*/
+
+// Type Conversion
+
+/*
+int main() {
+
+    int correct = 8;
+    int questions = 10;
+    double score = correct/(double)questions * 100; 
+
+    std::cout << score << "%";
+
+    return 0;
+}
+*/
+
+// input operator
+
+/*
+int main() {
+
+    std::string name;
+    int age;
+
+    // std::cout << "What's your name?: ";
+    // std::cin >> name;
+    // this is for a single string, without spaces
+
+    std::cout << "What's your full name?: ";
+    std::getline(std::cin >> std::ws, name); // library <string> >> std::ws (WHITE SPACES) this eliminates the chance to fail the buffer in the read of the string 
+    // this is to read a string that have spaces
+
+    std::cout << "What's your age? ";
+    std::cin >> age;
+
+
+    std::cout << "Hello " << name << '\n';
+    std::cout << "You are " << age << " years old";
 
     return 0;
 }
