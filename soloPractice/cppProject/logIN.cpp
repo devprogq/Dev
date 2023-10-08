@@ -5,10 +5,10 @@ using namespace std;
 int main() {
 
     string usernameStorage;
-    int passwordStorage;
+    string passwordStorage;
 
     string username;
-    int password;
+    string password;
 
     cout << "Create your username: ";
     cin >> usernameStorage;
