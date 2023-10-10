@@ -8,7 +8,7 @@ int main() {
     char op;
     int x;
     int y;
-    int result;
+    double result;
 
     cout << "Insert your operator (x / + -): ";
     cin >> op;
