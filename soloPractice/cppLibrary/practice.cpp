@@ -22,7 +22,6 @@ int main() {
         cout << "\nEl nombre del libro numero " << i + 1 << " es " << titulos[i] << '\n';
         cout << "El autor del libro numero " << i + 1 << " es " << autores[i] << '\n';
     }
-    
 
     return 0;
 }
