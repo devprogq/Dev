@@ -1,0 +1,79 @@
+:root {
+    --accent: #883aea;
+    --text-color: #f4b2b0;
+    --background-color: #310a65;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+};
+
+* {
+    box-sizing: border-box;
+}
+
+/* - HEADER */
+
+#header {
+    background-color: #310a65;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* logo styles */
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+#logo img {
+    height: 6vh;
+    max-width: 100%;
+}
+
+#logo h1 {
+    font-family: var(--font);
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+/* navbar styles */
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul {
+
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#nav li {
+    font-family: var(--font);
+    color: var(--text-color);
+    cursor: pointer;
+    list-style-type: none;
+    /* button styles */
+    border: 0.1vw solid var(--accent);
+    border-radius: 7.67px;
+    padding: 0.7rem;
+    transition: 0.2s;
+}
+
+#nav li:hover {
+    background-color: var(--text-color);
+    color: var(--accent);
+    border: 0.1vw solid var(--text-color);
+    border-radius: 7.67px;
+    padding: 0.7rem;
+}
+
+
