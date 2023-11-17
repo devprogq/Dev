@@ -1,0 +1,79 @@
+body {
+  background-color: #0D0D10;
+  margin: 0;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-color: #18181E;
+  width: 7vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.logo {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+.expand-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f5af19; /* Color del círculo, puedes ajustarlo según tu diseño */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; /* Centramos verticalmente */
+  left: 50%; /* Centramos horizontalmente */
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out
+}
+
+
+.nav-list img {
+  width: 2rem;
+}
+
+.nav-item {
+  color: white;
+  display: flex;
+  align-items: center; /* Alinear elementos verticalmente */
+  position: relative;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.settings-img {
+  width: 2.3rem;
+}
