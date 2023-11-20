@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.3s;
+  transition: width 0.3s ease; /* Mantén la transición aquí si la necesitas */
 }
 
 .logo {
@@ -30,14 +30,43 @@ body {
 .expand-circle {
   width: 50px;
   height: 50px;
-  background-color: #f5af19; /* Color del círculo, puedes ajustarlo según tu diseño */
   border-radius: 50%;
+  background-color: #18181E;
   position: absolute;
-  top: 50%; /* Centramos verticalmente */
-  left: 50%; /* Centramos horizontalmente */
-  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 6vw;
   cursor: pointer;
+  transition: left 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Agregado para una transición suave */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.triangle-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: #f5af19; /* Cambié el color para que sea visible sobre el fondo oscuro */
+  transition: transform 0.3s ease; /* Agregado para una transición suave */
+  border-radius: 2px; /* Agregado para hacer que las líneas tengan bordes redondeados */
+}
+
+#line1 {
+  transform-origin: right center; /* Establece el punto de transformación al extremo derecho */
+}
+
+#line2 {
+  transform-origin: right center; /* Establece el punto de transformación al extremo derecho */
+}
+
 
 .navcontainer {
   display: flex;
