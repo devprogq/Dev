@@ -4,7 +4,6 @@ const expandCircle = document.getElementById('expandCircle');
 
 // Agregamos un EventListener para el evento 'click' en el círculo
 expandCircle.addEventListener('click', () => {
-    // Cambiamos el ancho al hacer clic en el círculo
-    expandCircle.style.left = expandCircle.style.left === '7%' ? '15%' : '7%';
-    navbar.style.width = navbar.style.width === '25vh' ? '7vw' : '25vh';
+    // Cambiamos el ancho al hacer clic en el círculo 
+    navbar.style.width = navbar.style.width === '25vw' ? '7vw' : '25vw';
 });
