@@ -5,17 +5,16 @@ import { abrirDialog } from '../utils.js';
 
 const ClientComponent = () => {
     useEffect(() => {
-      // Asignar la función abrirDialog al evento click del elemento con id 'parrafo'
+
       const parrafo = document.getElementById('parrafo');
       parrafo.addEventListener('click', abrirDialog);
-  
-      // Limpieza al desmontar el componente
+
       return () => {
         parrafo.removeEventListener('click', abrirDialog);
       };
-    }, []); // El segundo argumento del useEffect, [] significa que solo se ejecutará una vez al montar el componente
+    }, []); 
   
-    return null; // No renderizamos nada ya que este componente solo maneja eventos
+    return null; 
   };
 
 
