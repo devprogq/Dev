@@ -72,4 +72,37 @@ body {
     padding: 0;
 }
 
+#sect2 {
+    color: white;
+}
 
+#texts {
+    width: 75rem;
+    margin-left: 9rem;
+    margin-bottom: 10rem;
+}
+
+#sect2 h2 {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sect2 h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+}
+
+#backgr {
+    margin-left: 12rem;
+    height: 120vh;
+    background-image: url(./recursos/300NK-Visuel17.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+#ficha {
+    background-color: white;
+}
