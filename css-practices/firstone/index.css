@@ -106,3 +106,25 @@ body {
 #ficha {
     background-color: white;
 }
+
+.texts h1, p {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img {
+    height: 300px;
+    padding: 60px;
+    box-shadow:#151623;
+}
+
+.dashboard {
+    text-align: center;
+}
