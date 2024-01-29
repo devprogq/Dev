@@ -48,9 +48,11 @@ const { title } = Astro.props;
 				</li>
 			</ul>
 			<div class="container">
-				<img src="/public/images/Car Pricing Hero.png" alt="SACA TU CREDITO">
-				<img src="/public/images/kawasaki_minja_650_2021_10.png" alt="ASEGURA TU MOTO">
+				<div class="img1">ASEGURA TU MOTO</div>
+
+				<div class="img2">SACÁ TU CRÉDITO</div>
 			</div>
+			
 		</header>
 
 		<slot />
@@ -103,21 +105,53 @@ const { title } = Astro.props;
 
 	.container {
 		display: flex;
+		margin-top: 75px;
+	}
+
+
+	.img2 {
+		width: 50%;
+		height: 200px;
+		background-image: url('/images/Car Pricing Hero.png');
+		background-repeat: no-repeat;
+		background-size: cover;   
+		border: 1px solid #f8df00;
+		opacity: 0.6;
+		transition: 0.3s;
+		color: white;
+		display: flex;
 		justify-content: center;
 		align-items: center;
-		border: 2px solid yellow;
-		padding: 20px;
+		font-weight: 500;
+		font-size: 50px;
+
 	}
 
-	.container img {
-		max-width: 50%;
-		height: auto;
-		object-fit: cover;
-		border: 2px solid yellow;
+	.img2:hover {
+		transform: scale(1.1);
+		opacity: 1;
 	}
 
-	.container p {
-		text-align: center;
+	.img1 {
+		width: 50%;
+		height: 200px;
+		background-image: url('/images/kawasaki_minja_650_2021_10.png');
+		background-repeat: no-repeat;
+		background-size: cover;    
+		border: 1px solid #f8df00;
+		opacity: 0.6;
+		transition: 0.3s;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		font-size: 50px;
+	}
+
+	.img1:hover {
+		transform: scale(1.1);
+		opacity: 1;
 	}
 
 </style>
