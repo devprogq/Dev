@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: #151623;
     font-family: quicksand;
 }
 
@@ -110,7 +109,7 @@ body {
 .texts h1, p {
     display: flex;
     justify-content: center;
-    color: white;
+    color: black;
 }
 
 .container {
