@@ -9,6 +9,7 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
@@ -17,6 +18,41 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<header>
+			<img src="" alt="">
+			<ul>
+				
+				<li>
+					<i class="fi fi-rr-home"></i>
+					INICIO
+				</li>
+				<li>
+					<i class="fi fi-rr-users-alt"></i>
+					NOSOTROS
+				</li>
+				<li>
+					<i class="fi fi-rr-motorcycle"></i>
+					NUESTRAS MOTOS
+				</li>
+				<li>
+					<i class="fi fi-rr-marker"></i>
+					SUCURSALES
+				</li>
+				<li>
+					<i class="fi fi-rr-interrogation"></i>
+					PREGUNTAS PRECUENTES
+				</li>
+				<li>
+					<i class="fi fi-rr-phone-call"></i>
+					CONTACTANOS
+				</li>
+			</ul>
+			<div class="container">
+				<img src="/public/images/Car Pricing Hero.png" alt="SACA TU CREDITO">
+				<img src="/public/images/kawasaki_minja_650_2021_10.png" alt="ASEGURA TU MOTO">
+			</div>
+		</header>
+
 		<slot />
 	</body>
 </html>
@@ -37,15 +73,51 @@ const { title } = Astro.props;
 		background: #13151a;
 		background-size: 224px;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+	body {
+		margin: 0;
+		padding: 0;
 	}
+
+	header {
+		background-color: #f8df00;
+		height: 17vh;
+		width: 100%;
+	}
+
+	header ul {
+		display: flex;
+		justify-content: center;
+		margin-top: 40px;
+		gap: 4rem;
+		list-style-type: none;
+	}
+
+	header li {
+		display: flex;
+		align-content: center;
+		gap: 1rem;
+		font-size: 1.1rem;
+		cursor: pointer;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid yellow;
+		padding: 20px;
+	}
+
+	.container img {
+		max-width: 50%;
+		height: auto;
+		object-fit: cover;
+		border: 2px solid yellow;
+	}
+
+	.container p {
+		text-align: center;
+	}
+
 </style>
