@@ -47,11 +47,30 @@ const { title } = Astro.props;
 					CONTACTANOS
 				</li>
 			</ul>
-			<div class="container">
+
+<div id="container">
+
+<div id="sectizq">
+	<p>
+       ASEGURA TU MOTO
+	</p>
+	<img src="/images/kawasaki_minja_650_2021_10.png" alt="">
+</div>
+
+<div id="sectder">
+	<p>
+       SACÁ TU CRÉDITO 
+	</p>
+	<img src="/images/Car Pricing Hero.png" alt="">
+</div>
+
+</div>
+
+			<!-- <div class="container">
 				<div class="img1">ASEGURA TU MOTO</div>
 
 				<div class="img2">SACÁ TU CRÉDITO</div>
-			</div>
+			</div> -->
 			
 		</header>
 
@@ -103,11 +122,58 @@ const { title } = Astro.props;
 		cursor: pointer;
 	}
 
-	.container {
+#container {
+    display: flex;
+	margin-top: 75px;
+}
+
+#sectizq img {
+	width: 50vw;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;   
+	opacity: 0.6;
+	transition: 0.3s;
+	border: 1px solid #f8df00;
+}
+
+#sectizq img:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+#sectizq p {
+     position: absolute;
+	 color: white;
+
+	}
+
+#sectder img {
+	width: 50vw;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;   
+	opacity: 0.6;
+	transition: 0.3s;
+	border: 1px solid #f8df00;
+}
+
+#sectder img:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+
+#sectder p {
+	position: absolute;
+	opacity: 1;
+	color: white;
+}
+
+	/* .container {
 		display: flex;
 		margin-top: 75px;
 	}
-
 
 	.img2 {
 		width: 50%;
@@ -152,6 +218,6 @@ const { title } = Astro.props;
 	.img1:hover {
 		transform: scale(1.1);
 		opacity: 1;
-	}
+	} */
 
 </style>
