@@ -19,34 +19,37 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<header>
-			<img src="" alt="">
-			<ul>
-				
-				<li>
-					<i class="fi fi-ss-home"></i>
-					<span>INICIO</span>
-				</li>
-				<li>
-					<i class="fi fi-ss-users-alt"></i>
-					<span>NOSOTROS</span>
-				</li>
-				<li>
-					<i class="fi fi-ss-motorcycle"></i>
-					<span>NUESTRAS MOTOS</span>
-				</li>
-				<li>
-					<i class="fi fi-ss-marker"></i>
-					<span>SUCURSALES</span>
-				</li>
-				<li>
-					<i class="fi fi-ss-interrogation"></i>
-					<span>PREGUNTAS PRECUENTES</span>
-				</li>
-				<li>
-					<i class="fi fi-ss-phone-call"></i>
-					<span>CONTACTANOS</span>
-				</li>
-			</ul>
+			<div id="nav">
+				<img src="/images/LOGO_GDEMesa-de-trabajo-1-1.png" alt="Logo">
+
+				<ul>
+					
+					<li>
+						<i class="fi fi-ss-home"></i>
+						<span>INICIO</span>
+					</li>
+					<li>
+						<i class="fi fi-ss-users-alt"></i>
+						<span>NOSOTROS</span>
+					</li>
+					<li>
+						<i class="fi fi-ss-motorcycle"></i>
+						<span>NUESTRAS MOTOS</span>
+					</li>
+					<li>
+						<i class="fi fi-ss-marker"></i>
+						<span>SUCURSALES</span>
+					</li>
+					<li>
+						<i class="fi fi-ss-interrogation"></i>
+						<span>PREGUNTAS PRECUENTES</span>
+					</li>
+					<li>
+						<i class="fi fi-ss-phone-call"></i>
+						<span>CONTACTANOS</span>
+					</li>
+				</ul>
+			</div>
 
 <div id="container">
 
@@ -65,14 +68,12 @@ const { title } = Astro.props;
 	</div>
 
 </div>
-
-			<!-- <div class="container">
-				<div class="img1">ASEGURA TU MOTO</div>
-
-				<div class="img2">SACÁ TU CRÉDITO</div>
-			</div> -->
 			
 		</header>
+
+		<section id="section1">
+
+		</section>
 
 		<slot />
 	</body>
@@ -102,14 +103,26 @@ const { title } = Astro.props;
 
 	header {
 		background-color: #f8df00;
-		height: 17vh;
+		height: 18vh;
 		width: 100%;
+	}
+
+	#nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	#nav img {
+		width: 200px;
+		cursor: pointer;
 	}
 
 	header ul {
 		display: flex;
 		justify-content: center;
-		margin-top: 40px;
 		gap: 4rem;
 		list-style-type: none;
 	}
@@ -134,12 +147,11 @@ const { title } = Astro.props;
 
 #container {
     display: flex;
-	margin-top: 67px;
 }
 
 #sectizq img, #sectder img {
 	width: 49.9vw;
-	height: 200px;
+	height: 170px;
 	background-repeat: no-repeat;
 	background-size: cover;   
 	opacity: 0.6;
@@ -156,8 +168,8 @@ const { title } = Astro.props;
 #sectizq p, #sectder p {
     position: absolute;
 	color: white;
-	top: 170px;
-	transform: translateX(65%);
+	top: 160px;
+	transform: translateX(60%);
 	opacity: 1;
 	font-size: 50px;	
 	text-align: center;
@@ -165,55 +177,5 @@ const { title } = Astro.props;
 	cursor: pointer;
 
 }
-
-	/* .container {
-		display: flex;
-		margin-top: 75px;
-	}
-
-	.img2 {
-		width: 50%;
-		height: 200px;
-		background-image: url('/images/Car Pricing Hero.png');
-		background-repeat: no-repeat;
-		background-size: cover;   
-		border: 1px solid #f8df00;
-		opacity: 0.6;
-		transition: 0.3s;
-		color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-weight: 500;
-		font-size: 50px;
-
-	}
-
-	.img2:hover {
-		transform: scale(1.1);
-		opacity: 1;
-	}
-
-	.img1 {
-		width: 50%;
-		height: 200px;
-		background-image: url('/images/kawasaki_minja_650_2021_10.png');
-		background-repeat: no-repeat;
-		background-size: cover;    
-		border: 1px solid #f8df00;
-		opacity: 0.6;
-		transition: 0.3s;
-		color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-weight: 500;
-		font-size: 50px;
-	}
-
-	.img1:hover {
-		transform: scale(1.1);
-		opacity: 1;
-	} */
 
 </style>
