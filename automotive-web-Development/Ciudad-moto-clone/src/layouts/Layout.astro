@@ -128,16 +128,17 @@ const { title } = Astro.props;
 }
 
 #sectizq img, #sectder img {
-	width: 50vw;
+	width: 49.9vw;
 	height: 200px;
 	background-repeat: no-repeat;
 	background-size: cover;   
 	opacity: 0.6;
 	transition: 0.3s;
 	border: 1px solid #f8df00;
+	cursor: pointer;
 }
 
-#sectizq img:hover {
+#sectizq img:hover, #sectder img:hover {
 	opacity: 1;
 	transform: scale(1.1);
 }
@@ -145,16 +146,14 @@ const { title } = Astro.props;
 #sectizq p, #sectder p {
     position: absolute;
 	color: white;
-	transform: translateX(60%);
+	top: 170px;
+	transform: translateX(65%);
 	opacity: 1;
 	font-size: 50px;	
 	text-align: center;
-	z-index: 10;
-}
+	z-index: 1;
+	cursor: pointer;
 
-#sectder img:hover {
-	opacity: 1;
-	transform: scale(1.1);
 }
 
 	/* .container {
