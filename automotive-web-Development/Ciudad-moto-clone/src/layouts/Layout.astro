@@ -9,7 +9,7 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
-		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
@@ -23,28 +23,28 @@ const { title } = Astro.props;
 			<ul>
 				
 				<li>
-					<i class="fi fi-rr-home"></i>
-					INICIO
+					<i class="fi fi-ss-home"></i>
+					<span>INICIO</span>
 				</li>
 				<li>
-					<i class="fi fi-rr-users-alt"></i>
-					NOSOTROS
+					<i class="fi fi-ss-users-alt"></i>
+					<span>NOSOTROS</span>
 				</li>
 				<li>
-					<i class="fi fi-rr-motorcycle"></i>
-					NUESTRAS MOTOS
+					<i class="fi fi-ss-motorcycle"></i>
+					<span>NUESTRAS MOTOS</span>
 				</li>
 				<li>
-					<i class="fi fi-rr-marker"></i>
-					SUCURSALES
+					<i class="fi fi-ss-marker"></i>
+					<span>SUCURSALES</span>
 				</li>
 				<li>
-					<i class="fi fi-rr-interrogation"></i>
-					PREGUNTAS PRECUENTES
+					<i class="fi fi-ss-interrogation"></i>
+					<span>PREGUNTAS PRECUENTES</span>
 				</li>
 				<li>
-					<i class="fi fi-rr-phone-call"></i>
-					CONTACTANOS
+					<i class="fi fi-ss-phone-call"></i>
+					<span>CONTACTANOS</span>
 				</li>
 			</ul>
 
@@ -90,7 +90,7 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: poppins;
 		background: #13151a;
 		background-size: 224px;
 	}
@@ -113,18 +113,28 @@ const { title } = Astro.props;
 		gap: 4rem;
 		list-style-type: none;
 	}
-
-	header li {
-		display: flex;
-		align-content: center;
-		gap: 1rem;
+	
+	header li {		
 		font-size: 1.1rem;
 		cursor: pointer;
+		transition: .3s ease-out;
 	}
+	header ul li span:hover {
+		text-decoration: underline;
+	}
+
+	ul li i {
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	ul li {
+		display: inline-block;
+	}
+
 
 #container {
     display: flex;
-	margin-top: 75px;
+	margin-top: 67px;
 }
 
 #sectizq img, #sectder img {
