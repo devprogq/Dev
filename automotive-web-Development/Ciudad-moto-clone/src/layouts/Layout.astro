@@ -127,7 +127,7 @@ const { title } = Astro.props;
 	margin-top: 75px;
 }
 
-#sectizq img {
+#sectizq img, #sectder img {
 	width: 50vw;
 	height: 200px;
 	background-repeat: no-repeat;
@@ -142,36 +142,19 @@ const { title } = Astro.props;
 	transform: scale(1.1);
 }
 
-#sectizq p {
-     position: absolute;
-	 color: white;
+#sectizq p, #sectder p {
+    position: absolute;
+	color: white;
+	transform: translateX(60%);
 	opacity: 1;
 	font-size: 50px;	
 	text-align: center;
-}
-
-#sectder img {
-	width: 50vw;
-	height: 200px;
-	background-repeat: no-repeat;
-	background-size: cover;   
-	opacity: 0.6;
-	transition: 0.3s;
-	border: 1px solid #f8df00;
+	z-index: 10;
 }
 
 #sectder img:hover {
 	opacity: 1;
 	transform: scale(1.1);
-}
-
-
-#sectder p {
-	position: absolute;
-	opacity: 1;
-	color: white;
-	font-size: 50px;	
-	text-align: center;
 }
 
 	/* .container {
