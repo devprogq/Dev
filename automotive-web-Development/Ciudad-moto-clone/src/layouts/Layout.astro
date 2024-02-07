@@ -19,57 +19,75 @@ const { title } = Astro.props;
 		<title>{title}</title>
 
 	</head>
-	<body>
-		<header>
-			<div id="nav">
-				<img src="/images/LOGO_GDEMesa-de-trabajo-1-1.png" alt="Logo">
+		<body>
+		  <header>
+	  	    <div class="nav">
 
-				<ul>
-					
-					<li>
-						<i class="fi fi-ss-home"></i>
-						<span>INICIO</span>
-					</li>
-					<li>
-						<i class="fi fi-ss-users-alt"></i>
-						<span>NOSOTROS</span>
-					</li>
-					<li>
-						<i class="fi fi-ss-motorcycle"></i>
-						<span>NUESTRAS MOTOS</span>
-					</li>
-					<li>
-						<i class="fi fi-ss-marker"></i>
-						<span>SUCURSALES</span>
-					</li>
-					<li>
-						<i class="fi fi-ss-interrogation"></i>
-						<span>PREGUNTAS PRECUENTES</span>
-					</li>
-					<li>
-						<i class="fi fi-ss-phone-call"></i>
-						<span>CONTACTANOS</span>
-					</li>
-				</ul>
-			</div>
+		      <img src="/images/LOGO_GDEMesa-de-trabajo-1-1.png" alt="Logo">
 
-<div id="container">
+			  <ul>
+			    <li>
 
-	<div id="sectizq">
-		<p>
-		ASEGURA TU MOTO
-		</p>
-		<img src="/images/kawasaki_minja_650_2021_10.png" alt="">
-	</div>
+				  <i class="fi fi-ss-home"></i>
+				  <span>INICIO</span>
 
-	<div id="sectder">
-		<p>
-		SACÁ TU CRÉDITO 
-		</p>
-		<img src="/images/Car Pricing Hero.png" alt="">
-	</div>
+				</li>
 
-</div>
+				<li>
+
+				  <i class="fi fi-ss-users-alt"></i>
+				  <span>NOSOTROS</span>
+
+				</li>
+
+				<li>
+
+				  <i class="fi fi-ss-motorcycle"></i>
+				  <span>NUESTRAS MOTOS</span>
+				  
+				</li>
+
+				<li>
+
+				  <i class="fi fi-ss-marker"></i>
+				  <span>SUCURSALES</span>
+
+				</li>
+
+				<li>
+
+				  <i class="fi fi-ss-interrogation"></i>
+				  <span>PREGUNTAS PRECUENTES</span>
+
+				</li>
+
+				<li>
+
+				  <i class="fi fi-ss-phone-call"></i>
+				  <span>CONTACTANOS</span>
+
+				</li>
+			  </ul>
+
+		</div>
+
+		<div id="container">
+
+		<div id="sectizq">
+			<p>
+			ASEGURA TU MOTO
+			</p>
+			<img src="/images/kawasaki_minja_650_2021_10.png" alt="">
+		</div>
+
+		<div id="sectder">
+			<p>
+			SACÁ TU CRÉDITO 
+			</p>
+			<img src="/images/Car Pricing Hero.png" alt="">
+		</div>
+
+		</div>
 			
 		</header>
 
@@ -86,7 +104,7 @@ const { title } = Astro.props;
 		</div>
 
 		<slot />
-	</body>
+		</body>
 </html>
 <style is:global>
 	:root {
@@ -123,7 +141,7 @@ const { title } = Astro.props;
 		width: 100%;
 	}
 
-	#nav {
+	.nav {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -131,7 +149,7 @@ const { title } = Astro.props;
 		margin-right: 50px;
 	}
 
-	#nav img {
+	.nav img {
 		width: 120px;
 		cursor: pointer;
 	}
