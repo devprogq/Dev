@@ -71,19 +71,19 @@ const { title } = Astro.props;
 
 		</div>
 
-		<div id="container">
+		<div class="container">
 
-		  <div id="sectizq">
+		  <div class="sectizq">
 
-		  	<p>ASEGURA TU MOTO</p>
-			<img src="/images/kawasaki_minja_650_2021_10.png" alt="">
+		  	<p class="parra">ASEGURA TU MOTO</p>
+			<img class="motoimg" src="/images/kawasaki_minja_650_2021_10.png" alt="">
 
 		  </div>
 
-		  <div id="sectder">
-
-			<p>SACÁ TU CRÉDITO</p>
-			<img src="/images/Car Pricing Hero.png" alt="">
+		  <div class="sectder">
+.
+			<p class="parra">SACÁ TU CRÉDITO</p>
+			<img class="motoimg" src="/images/Car Pricing Hero.png" alt="">
 
 		  </div>
 
@@ -91,8 +91,8 @@ const { title } = Astro.props;
 			
 		</header>
 
-		<section id="section1">
-		  <img src="/images/BANNER_WEB-1.png" alt="banner">
+		<section>
+		  <img class="sectback" src="/images/BANNER_WEB-1.png" alt="banner">
 		</section>
 
 		<div id="video">
@@ -179,12 +179,12 @@ const { title } = Astro.props;
 	}
 
 
-#container {
+.container {
     display: flex;
 }
 
 
-#sectizq img, #sectder img {
+.motoimg {
 	width: 49.9vw;
 	height: 120px;
 	background-repeat: no-repeat;
@@ -196,12 +196,12 @@ const { title } = Astro.props;
 	margin-top: 1px;
 }
 
-#sectizq img:hover, #sectder img:hover {
+.motoimg:hover {
 	opacity: 1;
 	transform: scale(1.1);
 }
 
-#sectizq p, #sectder p {
+.parra {
     position: absolute;
 	color: white;
 	top: 80px;
@@ -213,7 +213,7 @@ const { title } = Astro.props;
 	cursor: pointer;
 }
 
-#section1 img {
+.sectback {
 	margin-top: 120px;
 	width: 100%;
 	margin-bottom: 0;
