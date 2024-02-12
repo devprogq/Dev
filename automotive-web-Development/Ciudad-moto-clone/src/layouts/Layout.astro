@@ -95,12 +95,12 @@ const { title } = Astro.props;
 		  <img class="sectback" src="/images/BANNER_WEB-1.png" alt="banner">
 		</section>
 
-		<div id="video">
+		<div class="vidcont">
 		  <video width="1920" loop autoplay muted playsinline style="opacity: 0.5"
 			  src="https://ciudadmoto.com/site/wp-content/uploads/2023/08/slider-moto.webm">
 		  </video>
-		  <h2>Líderes en venta de motos</h2>
-		  <button>Conocé nuestras motos</button>
+		  <h2 class="interior">Líderes en venta de motos</h2>
+		  <button class="interior">Conocé nuestras motos</button>
 		</div>
 
 		<slot />
@@ -219,14 +219,15 @@ const { title } = Astro.props;
 	margin-bottom: 0;
 }
 
-#video {
+.vidcont {
 	position: absolute;
 }
 
-#video h2, #video button {
+.interior {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: white;
 }
 
 </style>
