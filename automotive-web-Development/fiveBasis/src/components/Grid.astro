@@ -1,0 +1,76 @@
+<h1>DESCUBRE TU HONDA</h1>
+
+<div class="grid-container">
+
+    <div class="grid-item">
+        <img src="1.jpg" alt="">
+        <div class="overlay">WAVE110S</div>
+    </div>
+    <div class="grid-item">
+        <img src="2-1.jpg" alt="">
+        <div class="overlay">CBTWISTER</div>
+    </div>
+    <div class="grid-item">
+        <img src="3.jpg" alt="">
+        <div class="overlay">CG150</div>
+    </div>
+    <div class="grid-item">
+        <img src="4.jpg" alt="">
+        <div class="overlay">XR150</div>
+    </div>
+    <div class="grid-item">
+        <img src="5.jpg" alt="">
+        <div class="overlay">CB190R</div>
+    </div>
+    <div class="grid-item">
+        <img src="6.jpg" alt="">
+        <div class="overlay">AFRICA TWIN</div>
+    </div>
+
+</div>
+
+<style>
+    h1 {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-weight: 300;
+    font-family: poppins;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+.grid-item:hover img {
+    transform: scale(1.2);
+    filter: brightness(30%);
+}
+
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    color: #fff;
+    font-size: 46px;
+    font-weight: 900;
+    text-shadow: 0 0 5px #000;
+    font-family: Raleway;
+}
+</style>
