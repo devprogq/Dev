@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Form from '../components/Form.astro';
+import Grid from '../components/Grid.astro'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -10,8 +11,10 @@ import Form from '../components/Form.astro';
 			<Form />
 		</section>
 
+
+
 		<section class="grid">
-			
+			<Grid />
 		</section>
 	</main>
 </Layout>
@@ -25,5 +28,9 @@ import Form from '../components/Form.astro';
 		font-size: 20px;
 		line-height: 1.6;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	section {
+		margin-bottom: 200px;
 	}
 </style>
