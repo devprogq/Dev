@@ -1,0 +1,84 @@
+<h1 class="title">Formulario de Contacto</h1>
+<form action="" method="">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono">
+
+    <label for="interes">Sección de Interés:</label>
+    <select class="interes" id="interes" name="interes">
+        <option value="venta">Venta de Autos</option>
+        <option value="servicio">Servicio Técnico</option>
+        <option value="repuestos">Repuestos</option>
+    </select>
+
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+    <!-- Campos adicionales -->
+    <label for="marca">Marca de Interés:</label>
+    <input type="text" id="marca" name="marca">
+
+    <label for="modelo">Modelo de Interés:</label>
+    <input type="text" id="modelo" name="modelo">
+
+    <input type="submit" value="Enviar">
+</form>
+
+<style>
+
+    main {
+        height: 100vh;
+    }
+    
+	.title {
+		display: flex;
+		justify-content: center;
+	}
+
+	form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.interes {
+		margin-bottom: 2em;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	input[type="text"],
+	input[type="email"],
+
+	textarea {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+
+	input[type="submit"] {
+		background-color: #007BFF;
+		color: #fff;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+</style>
