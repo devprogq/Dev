@@ -19,17 +19,8 @@
         </ul>
       </nav>
       <div class="main-content" :style="{ 'opacity': isExpanded ? '0.3' : '1' }">
-        <!-- Contenido principal de la página -->
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
-        <h1>Content</h1>
+
+
       </div>
     </div>
   </template>

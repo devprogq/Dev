@@ -8,9 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src",
+    "build:css": "tailwindcss build src/main.css -o public/css/tailwind.css",
+    "watch:css": "tailwindcss build src/main.css -o public/css/tailwind.css --watch"
   },
   "dependencies": {
+    "tailwindcss": "^3.4.1",
     "vue": "^3.4.15"
   },
   "devDependencies": {
