@@ -56,8 +56,9 @@
     transition: all 1s ease;
   }
   
-  .navbar-logo img {
-    height: 30px; /* Ajusta el tamaño del logo según sea necesario */
+  .navbar-logo {
+    height: 29px; /* Ajusta el tamaño del logo según sea necesario */
+    cursor: pointer;
   }
   
   .navbar-links {
