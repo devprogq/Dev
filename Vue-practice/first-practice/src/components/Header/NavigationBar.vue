@@ -1,23 +1,33 @@
 <template>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
     <div>
       <nav class="navbar" :class="{ 'expanded': isExpanded }">
         <div class="navbar-logo">
-          <img src="" alt="Logo" />
+          <i class="fi fi-rr-heart"></i>
         </div>
         <div class="navbar-toggle" @click="toggleNavbar">
-          <i class="fas fa-bars"></i>
+          <i class="fi fi-rr-menu-burger"></i>
         </div>
         <ul class="navbar-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item1</a></li>
+          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item2</a></li>
+          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item3</a></li>
+          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item4</a></li>
         </ul>
       </nav>
-      <div class="main-content" :style="{ 'opacity': isExpanded ? '0.5' : '1' }">
+      <div class="main-content" :style="{ 'opacity': isExpanded ? '0.3' : '1' }">
         <!-- Contenido principal de la página -->
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
       </div>
     </div>
   </template>
@@ -50,7 +60,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1000; /* Asegura que la barra esté sobre el contenido */
-    transition: all 0.3s ease;
+    transition: all 1s ease;
   }
   
   .navbar-logo img {
@@ -65,15 +75,17 @@
   }
   
   .navbar-links li {
-    margin-right: 20px;
+    margin-left: 20px;
+    margin: 5px;
+    
   }
-  
+
   .navbar-toggle {
     display: none; /* Se mostrará solo en dispositivos móviles */
   }
   
   .main-content {
-    margin-top: 60px; /* Ajusta según la altura de la barra de navegación */
+    margin-top: 30px; /* Ajusta según la altura de la barra de navegación */
     transition: all 0.3s ease;
   }
   
@@ -94,7 +106,7 @@
       display: none; /* Oculta los enlaces en dispositivos móviles */
       flex-direction: column; /* Apila los enlaces verticalmente */
       position: absolute;
-      top: 60px; /* Ajusta según la altura de la barra de navegación */
+      top: 44px; /* Ajusta según la altura de la barra de navegación */
       left: 0;
       background-color: #333;
       width: 100%;
