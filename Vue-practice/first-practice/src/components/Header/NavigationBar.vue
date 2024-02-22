@@ -9,7 +9,7 @@
           mili
         </div>
         <div class="navbar-toggle" @click="toggleNavbar">
-          <i class="fi fi-rr-menu-burger"></i>
+          <i class="fi fi-rr-caret-square-left"></i>
         </div>
         <ul class="navbar-links">
           <li><i class="fi fi-rr-apps-add"></i><a href="#">main</a></li>
@@ -88,6 +88,8 @@
   }
 
   .navbar-toggle {
+    transform: rotate(-55deg);
+    transition: all 0.5s ease;
     display: none; /* Se mostrará solo en dispositivos móviles */
   }
   
@@ -105,6 +107,7 @@
   }
   
   .expanded .navbar-toggle {
+    transform: rotate(55deg);
     display: block !important; /* Muestra el botón de toggle cuando la barra se expande */
   }
   
