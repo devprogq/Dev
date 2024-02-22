@@ -4,16 +4,18 @@
     <div>
       <nav class="navbar" :class="{ 'expanded': isExpanded }">
         <div class="navbar-logo">
+          i
           <i class="fi fi-rr-heart"></i>
+          mili
         </div>
         <div class="navbar-toggle" @click="toggleNavbar">
           <i class="fi fi-rr-menu-burger"></i>
         </div>
         <ul class="navbar-links">
-          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item1</a></li>
-          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item2</a></li>
-          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item3</a></li>
-          <li class="item"><i class="fi fi-rr-heart"></i><a href="#">Item4</a></li>
+          <li><i class="fi fi-rr-apps-add"></i><a href="#">main</a></li>
+          <li><i class="fi fi-rr-diploma"></i><a href="#">about us</a></li>
+          <li><i class="fi fi-rr-id-badge"></i><a href="#">services</a></li>
+          <li><i class="fi fi-rr-mobile-button"></i><a href="#">contact</a></li>
         </ul>
       </nav>
       <div class="main-content" :style="{ 'opacity': isExpanded ? '0.3' : '1' }">
@@ -77,7 +79,12 @@
   .navbar-links li {
     margin-left: 20px;
     margin: 5px;
-    
+  }
+
+   i {
+		vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .navbar-toggle {
